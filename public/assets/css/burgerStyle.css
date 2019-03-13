@@ -1,0 +1,57 @@
+#container {
+    background: lightcoral;
+    margin: 100px;
+}
+#devourede{
+    display: none;
+}
+#image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+h1 {
+    text-align: center;
+}
+div.form {
+    display: block;
+    text-align: center; 
+    clear: both;
+}
+form {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+#btn {
+    background: blue;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 200px;
+}
+#bu{
+    min-width: 200px;
+    min-height: 50px; 
+}
+#list1 {
+float: left;
+overflow: auto;
+background: #fff;
+padding: 20px 40px;
+}
+#list2 {
+float: right;
+overflow: auto;
+background: #fff;
+padding: 20px 40px;
+}
+#devouret {
+    margin: 10px 20px;
+}

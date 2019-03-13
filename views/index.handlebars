@@ -1,0 +1,35 @@
+<h1>Burgers!</h1>
+<img src="/img/Burger.jpg" id="image" alt="burger">
+<ol id="list1">
+    {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoure=true}}
+    {{/unless}}
+  {{/each}}
+</ol>
+
+<ol id="list2">
+    {{#each burgers}}
+      {{#if devoured}}
+         <li> {{burger_name}} </li>
+      {{/if}}
+    {{/each}}
+</ol>
+
+<div class="form">
+<form class="create-form">
+
+  <div class="form-group">
+    <textarea type="text" id="bu" name="burger_name"> </textarea>
+  </div>
+
+  <div class="form-group" id="devourede">
+    <input type="radio" name="devoured" value="0" checked> devoure it<br>
+    <input type="radio" name="devoured" value="1"> not
+  </div>
+
+
+  <button type="submit" id="btn">submit</button>
+  <h3>Add a burger of your choice.</h3>
+</form>
+</div>
